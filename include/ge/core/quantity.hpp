@@ -16,7 +16,7 @@ struct Quantity {
     using value_type = T;
     using space_type = S;
     
-    T value = T(0);            // その数だけ配列を確保
+    T value = T(0);
 
     constexpr Quantity() = default;
     constexpr explicit Quantity(T v) : value{v} {}

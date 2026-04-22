@@ -34,7 +34,7 @@ struct SpaceConverter<Pixel2D, NDC2D> {
 template <>
 struct SpaceConverter<UV2D, Pixel2D> {
     static constexpr auto apply(Quantity<float, Pixel2D> q, float screen_res) -> Quantity<float, UV2D> {
-        // テクスチャ座標 (0.0 ~ 1.0) へ。中心補正の 0.5 を入れるのが一般的
+        // テクスチャ座標 (0.0 ~ 1.0) へ。中心補正の 0.5 を入れる
         return Quantity<float, UV2D>{ (q.value + 0.5f) / screen_res };
     }
 };
