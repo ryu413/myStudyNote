@@ -1,0 +1,37 @@
+# ビルド成果物
+/build/
+bin/
+obj/
+out/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+.cache/
+CMakeLists.txt
+
+# Visual Studio / VSCode
+.vscode/
+*.code-workspace
+.compile_commands.json
+# Mac / Windows のゴミファイル
+.DS_Store
+Thumbs.db
+
+# コンパイル生成物
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
+*.lib
+*.pdb
+
+# 自動生成ファイル
+*.log
+*.tmp
+
+/docs/
